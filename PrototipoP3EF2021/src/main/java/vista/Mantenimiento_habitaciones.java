@@ -553,10 +553,10 @@ public class Mantenimiento_habitaciones extends javax.swing.JInternalFrame {
 
     private void btnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAyudaActionPerformed
 try {
-            if ((new File("src\\main\\java\\Hoteleria\\ayuda\\Ayuda Mantenimiento Habitaciones.chm")).exists()) {
+            if ((new File("src\\main\\java\\ayudas\\Ayuda Mantenimiento Habitaciones.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Hoteleria\\ayuda\\Ayuda Mantenimiento Habitaciones.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\Ayuda Mantenimiento Habitaciones.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");

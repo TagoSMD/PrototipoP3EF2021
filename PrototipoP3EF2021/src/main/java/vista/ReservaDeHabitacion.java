@@ -780,10 +780,10 @@ public class ReservaDeHabitacion extends javax.swing.JInternalFrame {
 
     private void BtnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAyudaActionPerformed
 try {
-            if ((new File("src\\main\\java\\Hoteleria\\ayuda\\Ayuda de Reservacion de Habitación.chm")).exists()) {
+            if ((new File("src\\main\\java\\ayudas\\Ayuda de Reservacion de Habitación.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Hoteleria\\ayuda\\Ayuda de Reservacion de Habitación.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\Ayuda de Reservacion de Habitación.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");

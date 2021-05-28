@@ -525,10 +525,10 @@ public class Mantenimiento_Huespedes extends javax.swing.JInternalFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         try {
-            if ((new File("src\\main\\java\\Hoteleria\\ayuda\\AyudaMantenimientoHuespedes.chm")).exists()) {
+            if ((new File("src\\main\\java\\ayudas\\AyudaMantenimientoHuespedes.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Hoteleria\\ayuda\\AyudaMantenimientoHuespedes.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\AyudaMantenimientoHuespedes.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");

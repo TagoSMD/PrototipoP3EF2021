@@ -675,10 +675,10 @@ public class Asignaciones_Habitaciones extends javax.swing.JInternalFrame {
 
     private void btn_ayudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ayudaActionPerformed
         try {
-            if ((new File("src\\main\\java\\Hoteleria\\ayuda\\AyudaAsignacionHabitacion.chm")).exists()) {
+            if ((new File("src\\main\\java\\ayudas\\AyudaAsignacionHabitacion.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Hoteleria\\ayuda\\AyudaAsignacionHabitacion.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\AyudaAsignacionHabitacion.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");
