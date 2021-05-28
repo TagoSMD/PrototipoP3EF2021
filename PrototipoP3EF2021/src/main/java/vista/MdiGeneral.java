@@ -85,7 +85,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         jMenu2.setText("Catalogo");
         jMenu2.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
 
-        jMenuItem2.setText("Tiendas");
+        jMenuItem2.setText("Habitaciones");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -93,7 +93,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem2);
 
-        jMenuItem1.setText("Clientes");
+        jMenuItem1.setText("Huespedes");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -101,7 +101,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem1);
 
-        jMenuItem3.setText("Empleados");
+        jMenuItem3.setText("Pisos");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem3ActionPerformed(evt);
@@ -117,7 +117,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem4);
 
-        jMenuItem5.setText("Rentas");
+        jMenuItem5.setText("s");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
@@ -130,7 +130,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         jMenu4.setText("Procesos");
         jMenu4.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
 
-        jMenuItem6.setText("Asignacion a Devoluciones");
+        jMenuItem6.setText("Asignaciones de habitaciones");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);
@@ -180,59 +180,37 @@ public class MdiGeneral extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-        FrmClientes ventana = new FrmClientes();
+         Mantenimiento_Huespedes ventana = new Mantenimiento_Huespedes();
         jPanel1.add(ventana); 
-       
+
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-          FrmTiendas ventana = new FrmTiendas();
+              
+        Mantenimiento_habitaciones ventana = new Mantenimiento_habitaciones();
         jPanel1.add(ventana); 
+  
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:}
-          FrmEmpleado ventana = null;
-        try {
-            ventana = new FrmEmpleado();
-        } catch (SQLException ex) {
-            Logger.getLogger(MdiGeneral.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        jPanel1.add(ventana); 
+
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
-            FrmPeliculas1 ventana = null;
-        try {
-            ventana = new FrmPeliculas1();
-        } catch (SQLException ex) {
-            Logger.getLogger(MdiGeneral.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        jPanel1.add(ventana); 
+
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
-                FrmRentas ventana = null;
-        try {
-            ventana = new FrmRentas();
-        } catch (SQLException ex) {
-            Logger.getLogger(MdiGeneral.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        jPanel1.add(ventana); 
+
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-                  FrmDevolucion ventana = null;
-        try {
-            ventana = new FrmDevolucion();
-        } catch (SQLException ex) {
-            Logger.getLogger(MdiGeneral.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        jPanel1.add(ventana); 
+
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed

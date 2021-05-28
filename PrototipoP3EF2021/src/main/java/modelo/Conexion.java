@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 
 public class Conexion {
- private static final String JDBC_URL = "jdbc:mysql://localhost/hotelero";
+ private static final String JDBC_URL = "jdbc:mysql://localhost/hoteleria";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASS = "1234";
 
