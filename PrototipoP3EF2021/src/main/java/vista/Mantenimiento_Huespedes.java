@@ -29,17 +29,11 @@ import net.sf.jasperreports.view.JasperViewer;
 public class Mantenimiento_Huespedes extends javax.swing.JInternalFrame {
     DefaultTableModel modelo1;
     DefaultTableCellRenderer centro= new DefaultTableCellRenderer();
-    String codigoAplicacion="2004";
     /**
      * Creates new form Mantenimiento_Huespedes
      */
     void habilitarAcciones() {
 
-
-        BtnIng.setEnabled(false);
-        BtnMod.setEnabled(false);
-        BtnElim.setEnabled(false);
-        BtnBus.setEnabled(false);
 
     }
     public Mantenimiento_Huespedes() {
@@ -564,7 +558,7 @@ public class Mantenimiento_Huespedes extends javax.swing.JInternalFrame {
         try {
             connection = Conexion.getConnection();
             report = JasperCompileManager.compileReport(new File("").getAbsolutePath()
-                    + "/src/main/java/Hoteleria/reportes/ReporteHuespedes.jrxml");
+                    + "/src/main/java/reportes/ReporteHuespedes.jrxml");
             print = JasperFillManager.fillReport(report, p, connection);
             JasperViewer view = new JasperViewer(print, false);
             view.setTitle("Reporte De Huespedes");

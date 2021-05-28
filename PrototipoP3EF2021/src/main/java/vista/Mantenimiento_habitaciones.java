@@ -29,10 +29,7 @@ import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.view.JasperViewer;
-import seguridad.datos.BitacoraDao;
-import seguridad.dominio.Bitacora;
-import seguridad.vista.Aplicacion_Perfil;
-import seguridad.vista.Login;
+
 
 /**
  *
@@ -632,7 +629,7 @@ private Connection connection = null;
         try {
             connection = Conexion.getConnection();
             report = JasperCompileManager.compileReport(new File("").getAbsolutePath()
-                    + "/src/main/java/Hoteleria/reportes/mantHabitaciones.jrxml");
+                    + "/src/main/java/reportes/mantHabitaciones.jrxml");
             print = JasperFillManager.fillReport(report, p, connection);
             JasperViewer view = new JasperViewer(print, false);
             view.setTitle("Mantenimiento Habitaciones");
