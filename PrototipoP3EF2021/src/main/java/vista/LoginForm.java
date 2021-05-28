@@ -132,8 +132,8 @@ public class LoginForm extends javax.swing.JFrame {
                 if (txtContraseña.getText().equals(usuarioAConsultar.getPassword()) && txtUsuario.getText().equals(usuarioAConsultar.getUsername())) {
                     JOptionPane.showMessageDialog(null, "Bienvenido\n", "Mensaje de bienvenida", JOptionPane.INFORMATION_MESSAGE);
 
-            //        MdiGeneral menuGeneral = new MdiGeneral();
-         //           menuGeneral.setVisible(true);
+                   MdiGeneral menuGeneral = new MdiGeneral();
+                    menuGeneral.setVisible(true);
                     this.dispose();
 
                 } else {
