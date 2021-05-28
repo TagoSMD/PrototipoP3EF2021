@@ -51,7 +51,7 @@ public class MdiGeneral extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(153, 255, 204));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -71,18 +71,19 @@ public class MdiGeneral extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(600, 600, 600)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
-                .addGap(84, 84, 84))
+                .addGap(521, 521, 521)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                .addGap(163, 163, 163))
         );
 
         jMenu1.setText("Inicio");
-        jMenu1.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
+        jMenu1.setFont(new java.awt.Font("Dubai", 1, 14)); // NOI18N
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Catalogo");
-        jMenu2.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
+        jMenu2.setFont(new java.awt.Font("Dubai", 1, 14)); // NOI18N
 
+        jMenuItem2.setFont(new java.awt.Font("Dubai", 2, 14)); // NOI18N
         jMenuItem2.setText("Habitaciones");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,6 +92,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem2);
 
+        jMenuItem1.setFont(new java.awt.Font("Dubai", 2, 14)); // NOI18N
         jMenuItem1.setText("Huespedes");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,6 +101,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem1);
 
+        jMenuItem3.setFont(new java.awt.Font("Dubai", 2, 14)); // NOI18N
         jMenuItem3.setText("Reservas");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,8 +113,9 @@ public class MdiGeneral extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         jMenu4.setText("Procesos");
-        jMenu4.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
+        jMenu4.setFont(new java.awt.Font("Dubai", 1, 14)); // NOI18N
 
+        jMenuItem6.setFont(new java.awt.Font("Dubai", 2, 14)); // NOI18N
         jMenuItem6.setText("Asignaciones de habitaciones");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,15 +127,16 @@ public class MdiGeneral extends javax.swing.JFrame {
         jMenuBar1.add(jMenu4);
 
         jMenu5.setText("Informes");
-        jMenu5.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
+        jMenu5.setFont(new java.awt.Font("Dubai", 1, 14)); // NOI18N
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("Seguridad");
-        jMenu6.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
+        jMenu6.setFont(new java.awt.Font("Dubai", 1, 14)); // NOI18N
         jMenuBar1.add(jMenu6);
 
+        jMenu8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jMenu8.setText("Ayuda");
-        jMenu8.setFont(new java.awt.Font("Dialog", 2, 12)); // NOI18N
+        jMenu8.setFont(new java.awt.Font("Dubai", 1, 14)); // NOI18N
 
         jMenuItem7.setForeground(new java.awt.Color(255, 255, 255));
         jMenuItem7.setText("Salir");
@@ -154,7 +159,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
